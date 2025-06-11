@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="modal.css"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="/imagenes/netflix-removebg-preview.png" class="logo">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Películas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Novedades populares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mi lista</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explora por idiomas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="movie-highlight">
+        <img src="/imagenes/maxres.jpg" class="background-image">
+        <div class="movie-info">
+            <div class="movie-header">
+                <img src="/imagenes/netflix_logo_icon_170919-removebg-preview.png" class="small-logo"> 
+                <span class="series-text">Anime</span> 
+            </div>
+            <img src="/imagenes/Shūmatsu_no_Valkyrie_Logo-removebg-preview.png" class="title-image">
+            
+            <p class="series-description">"Shuumatsu no Valkyrie", también conocido como "Record of Ragnarok", es un anime que narra la historia de una batalla final entre los dioses y la humanidad, donde el destino de la humanidad está en juego.</p>
+
+            <div class="buttons">
+                <a href="trailer.html" class="btn play-button" id="playBtn">
+                    <span class="triangle"></span> Reproducir
+                </a>
+                <button class="btn info-button" data-toggle="modal" data-target="#infoModal">Más información</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="header-content">
+                        <img src="/imagenes/netflix_logo_icon_170919-removebg-preview.png" class="netflix-logo" alt="Logo Netflix">
+                        <span class="modal-title">Anime</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/imagenes/HD-wallpaper-anime-record-of-ragnarok-zeus-record-of-ragnarok-brunhilde-record-of-ragnarok-poseidon-record-of-ragnarok-kojiro-sasaki-adam-record-of-ragnarok-goll-record-of-ragnarok.jpg" class="modal-top-image" alt="Imagen Superior">
+                    <div class="title-container">
+                        <img src="/imagenes/Shūmatsu_no_Valkyrie_Logo-removebg-preview.png" class="modal-title-image" alt="Título de la serie">
+                    </div>
+                    <a href="trailer.html" class="btn btn-danger play-button" id="playBtnModal">Reproducir</a>
+                    <div class="description">
+                        <p>Shuumatsu no Valkyrie es un anime emocionante que presenta combates épicos entre dioses y humanos.</p>
+                        <p>Año: 2021</p>
+                        <p>Género: Acción, Fantasía</p>
+                        <p>Sinopsis: En un torneo donde los dioses luchan contra los mejores guerreros de la humanidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
